@@ -13,7 +13,7 @@
       ev.preventDefault();
       var request = new XMLHttpRequest();
       request.addEventListener('load', addShow);
-      request.open('POST', {{ url_for('add')|tojson }});
+      request.open('POST', {{url_for('')|tojson }});
       request.send(new FormData(this));
     }
 
